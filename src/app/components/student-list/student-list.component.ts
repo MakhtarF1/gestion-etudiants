@@ -20,6 +20,7 @@ import { Student } from '../../models/student.model';
           <h2 class="text-2xl font-bold text-gray-800">Liste des Étudiants</h2>
           <p class="text-gray-600">Total: {{ (students$ | async)?.length || 0 }} étudiants</p>
         </div>
+        <!-- teste pour voir  -->
         
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           <div *ngFor="let student of students$ | async" 
